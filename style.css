@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 5rem;
+    padding-bottom: .5rem;
+    background-color: #003314;
+    font-size: medium;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 150%;
+    font-weight: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: azure;
+    text-decoration: none;
+}
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    width: 100%;
+    margin: auto;
+    padding-top: 1.5rem;
+    position: relative;
+    top: 0;
+    z-index: 1;
+    flex-direction: row;
+    box-shadow: 2px 2px 4px;
+    height: 9vh;
+    transition: all .5s;
+}
+
+.group-title {
+    font-size: 1.5rem;
+    margin: 5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+
+.navbar-links{
+    height: 100%;
+}
+
+.navbar-links ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 1rem;
+}
+    
+.navbar-links li:hover{
+     background-color: burlywood;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+.trigger {
+    cursor: pointer;
+    user-select: none;
+}
+
+.appointment-btn {
+    font-size: 12px;
+    display: inline-block;
+    padding: 0 20px;
+    height: 28px;
+    line-height: 26px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background: transparent!important;
+}
+
+
+/* homepage section styling */
+.home{
+    display: block;
+    background-image: url(https://images.unsplash.com/photo-1621607505145-a022ec52de64?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODN8fGJhcmJlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+    font-style: oblique;
+    height: 300px;
+    width: 100%;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.home-content .text-1{
+    font-size: 30px;
+    text-align: center;
+    text-decoration: dotted;
+}
+
+.home-content .text-2{
+    font-size: 27px;
+    font-weight: 600;
+    margin-left: 15px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+/* PAGES section styling */
+.pages{
+    display: block;
+    background-color:  whitesmoke;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.pages-content .text-1{
+    font-size: 30px;
+    font-style: oblique;
+    text-align: center;
+    text-decoration: dotted;
+}
+
+.pages-content .text-2{
+    font-size: 20px;
+    font-weight: 600;
+    font-style: oblique;
+    margin-left: 15px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* TESTIMONIALS section styling */
+.testimonials{
+    background-color: #003314;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.testimonials img{
+     height: 400px;
+     width: 700px;
+     object-fit: cover;
+     border-radius: 6px;
+}
+
+.testimonials h1{
+    color: antiquewhite;
+    padding-bottom: 40px;
+    text-align: center;
+    padding-top: 40px;
+
+}
+
+.testimonials p {
+   color:black ;
+   padding-right: 70px;
+   padding-left: 20px;
+   text-align: justify;
+   
+}
+
+.testimonials .text-3 {
+    padding-left: 20px;
+    color: burlywood;
+    font-weight: 400;
+}
+.testimonials .text-3 .typing span{
+    color: burlywood;
+}
+
+
+/* SERVICES section styling */
+.holdingcontainer h1{
+    text-align: center;
+    color: black;
+    padding-bottom: 30px;
+}
+
+.holdingcontainer{
+    max-width: 100%;
+    display: flex;
+    background: whitesmoke;
+    box-sizing: border-box;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background:  #003314;
+    width: 270px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.card-image{
+    height: 270px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.barb-1{
+     background-image: url(images/abby.jpg);
+}
+
+.barb-2{
+    background-image: url(https://media.istockphoto.com/photos/barber-shop-picture-id1144015445?b=1&k=20&m=1144015445&s=170667a&w=0&h=4ORty9zBFnHvR2q5OwEOCJcMdyqavxSUc09grqpXprI=);
+}
+
+.barb-3{
+    background-image: url(https://media.istockphoto.com/photos/young-woman-looking-for-changes-trying-new-hairstyle-at-beauty-salon-picture-id1271712634?b=1&k=20&m=1271712634&s=170667a&w=0&h=Ud0INi4oFWOP0qOC7Nrg1feH3jeGzuhUbUwZ7rFOooU=);
+}
+
+.card h2{
+     padding: 10px;
+}
+
+.card p{
+    padding: 15px;
+}
+.card:hover {
+    background-color:  27, 27, 27;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all is ease;
+
+}
