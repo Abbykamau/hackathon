@@ -6,12 +6,9 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-header {
-    width: 100%;
-    height: 5rem;
-    padding-bottom: .5rem;
-    background-color: #003314;
-    font-size: medium;
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -19,18 +16,22 @@ body {
     padding: 0;
     line-height: 150%;
     font-weight: normal;
+    overflow-x: hidden;
 }
 
-html {
-    scroll-behavior: smooth;
-    -webkit-text-size-adjust: 100%;
+.header {
+    width: 100%;
+    height: 5rem;
+    padding-bottom: .5rem;
+    background-color: #003314;
+    font-size: medium;
 }
 
-li{
+li {
     list-style: none;
 }
 
-a{
+a {
     color: azure;
     text-decoration: none;
 }
@@ -101,6 +102,7 @@ a{
     width: 100%;
     background-color: white;
     border-radius: 10px;
+    z-index: 1000;
 }
 
 @media (max-width: 800px) {
@@ -133,6 +135,18 @@ a{
 
     .navbar-links.active {
         display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 6em 0;
+        background-color: #003314;
+    }
+
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 10px;
     }
 }
 
@@ -210,7 +224,7 @@ a{
     background-color: #003314;
     display: flex;
     justify-content: space-around;
-    padding: 0;
+    padding: 1em 0;
     width: 100%;
     margin: 0;
     text-align: justify;
@@ -218,8 +232,9 @@ a{
 }
 
 .testimonials img{
-     height: 400px;
-     width: 700px;
+     /* height: 400px; */
+     width: 300px;
+     height: auto;
      object-fit: cover;
      border-radius: 6px;
 }
